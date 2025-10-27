@@ -21,7 +21,6 @@ function NoMovies() {
 }
 
 export function Movies({movies}) {
-    console.log({movies});
     const hasMovies = movies?.length > 0;
     return (
         hasMovies ? <ListOfMovies movies={movies}/> : <NoMovies />
